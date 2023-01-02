@@ -1,0 +1,20 @@
+{
+  "name": "css-tokenizer-tests",
+  "version": "1.0.0",
+  "description": "Tests for CSS Tokenizers",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./index.mjs"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@csstools/css-tokenizer": "^1.0.0",
+    "@csstools/tokenizer": "^3.1.0",
+    "css-tree": "^2.3.1",
+    "postcss": "^8.4.20"
+  },
+  "volta": {
+    "node": "19.3.0"
+  }
+}
