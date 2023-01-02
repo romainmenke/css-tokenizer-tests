@@ -7,12 +7,21 @@
 	<title>CSS Tokenizer Tests</title>
 
 	<style>
-		table {
+		body {
 			margin: 0 auto;
 			max-width: 900px;
+			padding: 16px;
+			width: 100%;
+		}
+
+		table {
 			width: 100%;
 			border-collapse: collapse;
 			border-spacing: 0;
+		}
+
+		h2 {
+			margin-top: 48px;
 		}
 
 		td, th {
@@ -32,6 +41,22 @@
 <body>
 	<section>
 	<h2>Summary</h2>
+
+	<div style="margin-bottom: 64px;">
+		<table>
+			<thead>
+	<tr>
+		<th>@csstools/css-tokenizer</th>
+<th>@csstools/tokenizer</th>
+<th>css-tree</th>
+</tr>
+</thead>
+			<tbody>
+				<tr style="text-align: center;"><td>639 / 660</td><td>538 / 735</td><td>624 / 660</td></tr>
+			</tbody>
+		</table>
+	</div>
+
 	<table>
 	<thead>
 	<tr>
