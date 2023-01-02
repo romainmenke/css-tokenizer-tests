@@ -24,14 +24,12 @@ function tokenToUniversal(token) {
 					return '[-token';
 				case ']':
 					return ']-token';
-				case '%':
-					return '%-token';
 				case ';':
-					return ';-token';
+					return 'semicolon-token';
 				case ':':
-					return ':-token';
+					return 'colon-token';
 				case ',':
-					return ',-token';
+					return 'comma-token';
 			
 				default:
 					return 'delim-token';
