@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Tokenizer Tests</title>
+
+	<style>
+		body {
+			margin: 0 auto;
+			max-width: 900px;
+			padding: 16px;
+			width: 100%;
+		}
+
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+
+		h2 {
+			margin-top: 48px;
+		}
+
+		td, th {
+			padding: 16px;
+		}
+		
+		td + td, th + th {
+			border-left: 1px solid rgb(0, 0, 0, 0.2);
+		}
+
+		thead tr,
+		tr:not(:last-child) {
+			border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS Tokenizer tests</h1>
+
+	<ul>
+		<li><a href="./index.html">index.html</a></li>
+		<li><a href="./community.html">community.html</a></li>
+	</ul>
+
+	<section>
+	<h2>Summary</h2>
+
+	<div style="margin-bottom: 64px;">
+		<table>
+			<thead>
+	<tr>
+		<th>@csstools/css-tokenizer</th>
+<th>@csstools/tokenizer</th>
+<th>css-tree</th>
+</tr>
+</thead>
+			<tbody>
+				<tr style="text-align: center;"><td>198400 / 198400</td><td>25651 / 200224</td><td>198400 / 198400</td></tr>
+			</tbody>
+		</table>
+	</div>
+
+	<table>
+	<thead>
+	<tr>
+		<th>path</th>
+<th>@csstools/css-tokenizer</th>
+<th>@csstools/tokenizer</th>
+<th>css-tree</th>
+</tr>
+</thead>
+	<tbody>
+		<tr><td><a href="#bootstrap">bootstrap</a></td><td>185946 / 185946</td><td>22235 / 187426</td><td>185946 / 185946</td></tr><tr><td><a href="#openprops">openprops</a></td><td>12454 / 12454</td><td>3416 / 12798</td><td>12454 / 12454</td></tr>
+	</tbody>
+</table>
+
+</section><section id="bootstrap">
+	<h2>bootstrap</h2>
+	<table>
+	<thead>
+	<tr>
+		<th>path</th>
+<th>@csstools/css-tokenizer</th>
+<th>@csstools/tokenizer</th>
+<th>css-tree</th>
+</tr>
+</thead>
+	<tbody>
+		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/bootstrap/default" target="_blank">bootstrap/default</a></td><td>111766 / 111766</td><td>14409 / 112506</td><td>111766 / 111766</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/bootstrap/min" target="_blank">bootstrap/min</a></td><td>74180 / 74180</td><td>7826 / 74920</td><td>74180 / 74180</td></tr>
+	</tbody>
+</table>
+
+</section><section id="openprops">
+	<h2>openprops</h2>
+	<table>
+	<thead>
+	<tr>
+		<th>path</th>
+<th>@csstools/css-tokenizer</th>
+<th>@csstools/tokenizer</th>
+<th>css-tree</th>
+</tr>
+</thead>
+	<tbody>
+		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/openprops/default" target="_blank">openprops/default</a></td><td>12454 / 12454</td><td>3416 / 12798</td><td>12454 / 12454</td></tr>
+	</tbody>
+</table>
+
+</section>
+</body>
+</html>
