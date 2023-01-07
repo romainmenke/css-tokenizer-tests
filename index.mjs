@@ -2,6 +2,7 @@ import path from 'path';
 import { resultsAsHTML } from "./lib/results-as-html.mjs";
 import { testCommunityCSSSources } from './lib/test-community-css-sources.mjs';
 import { testFeatures } from "./lib/test-feature.mjs";
+import { testFuzz } from './lib/test-fuzz.mjs';
 import { traverseDir } from "./lib/traverse-dir.mjs";
 
 {
@@ -76,4 +77,9 @@ import { traverseDir } from "./lib/traverse-dir.mjs";
 
 	const results = await testCommunityCSSSources(Array.from(testGroups.values()));
 	await resultsAsHTML(results, 'community.html');
+}
+
+
+for (let i = 0; i < 5; i++) {
+	testFuzz()
 }
