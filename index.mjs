@@ -79,7 +79,6 @@ import { traverseDir } from "./lib/traverse-dir.mjs";
 	await resultsAsHTML(results, 'community.html');
 }
 
-
-for (let i = 0; i < 5; i++) {
-	testFuzz()
-}
+// for (let i = 0; i < 1000; i++) {
+// 	testFuzz()
+// }
