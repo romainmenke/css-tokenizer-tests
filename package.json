@@ -1,14 +1,23 @@
 {
-  "name": "css-tokenizer-tests",
+  "name": "@rmenke/css-tokenizer-tests",
   "version": "1.0.0",
   "description": "Tests for CSS Tokenizers",
-  "main": "index.js",
-  "scripts": {
-    "test": "node ./index.mjs",
-    "fuzz": "node ./fuzz.mjs",
-    "test:debug": "DEBUG=true node ./index.mjs"
+  "type": "module",
+  "main": "index.mjs",
+  "publishConfig": {
+    "access": "public"
   },
-  "author": "",
+  "files": [
+    "README.md",
+    "index.mjs"
+  ],
+  "scripts": {
+    "build": "node ./build-package-content.mjs",
+    "fuzz": "node ./fuzz.mjs",
+    "test": "node ./run-tests.mjs",
+    "test:debug": "DEBUG=true node ./run-tests.mjs"
+  },
+  "author": "Romain Menke",
   "license": "MIT",
   "devDependencies": {
     "@csstools/css-tokenizer": "^1.0.0",
