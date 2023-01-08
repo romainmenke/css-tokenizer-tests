@@ -78,7 +78,3 @@ import { traverseDir } from "./lib/traverse-dir.mjs";
 	const results = await testCommunityCSSSources(Array.from(testGroups.values()));
 	await resultsAsHTML(results, 'community.html');
 }
-
-// for (let i = 0; i < 1000; i++) {
-// 	testFuzz()
-// }
