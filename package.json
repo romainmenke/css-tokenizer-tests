@@ -1,6 +1,6 @@
 {
   "name": "@rmenke/css-tokenizer-tests",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tests for CSS Tokenizers",
   "type": "module",
   "main": "index.mjs",
