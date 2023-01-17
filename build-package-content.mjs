@@ -37,4 +37,5 @@ import { traverseDir } from "./lib/traverse-dir.mjs";
 	}
 
 	await fs.writeFile('./index.mjs', `export const testCorpus = ${JSON.stringify(packageContents)}`)
+	await fs.writeFile('./index.cjs', `module.exports = { testCorpus: ${JSON.stringify(packageContents)} }`)
 }

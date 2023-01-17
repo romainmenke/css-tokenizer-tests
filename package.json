@@ -1,15 +1,23 @@
 {
   "name": "@rmenke/css-tokenizer-tests",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Tests for CSS Tokenizers",
-  "type": "module",
-  "main": "index.mjs",
+  "main": "index.cjs",
+  "module": "index.mjs",
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.cjs",
+      "default": "./index.mjs"
+    }
+  },
   "publishConfig": {
     "access": "public"
   },
   "files": [
     "README.md",
-    "index.mjs"
+    "index.mjs",
+    "index.cjs"
   ],
   "scripts": {
     "build": "node ./build-package-content.mjs",
