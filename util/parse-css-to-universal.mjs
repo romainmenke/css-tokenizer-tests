@@ -105,5 +105,5 @@ const nameMapping = {
 }
 
 function tokenNameToUniversal(name) {
-	return nameMapping[name]
+	return nameMapping[name] ?? name
 }
