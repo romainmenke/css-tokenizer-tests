@@ -56,10 +56,11 @@
 		<th>@csstools/css-tokenizer</th>
 <th>@csstools/tokenizer</th>
 <th>css-tree</th>
+<th>parse-css</th>
 </tr>
 </thead>
 			<tbody>
-				<tr style="text-align: center;"><td>1863 / 1945</td><td>1416 / 2965</td><td>1732 / 1955</td></tr>
+				<tr style="text-align: center;"><td>1863 / 1945</td><td>1416 / 2965</td><td>1732 / 1955</td><td>887 / 1905</td></tr>
 			</tbody>
 		</table>
 	</div>
@@ -71,10 +72,11 @@
 <th>@csstools/css-tokenizer</th>
 <th>@csstools/tokenizer</th>
 <th>css-tree</th>
+<th>parse-css</th>
 </tr>
 </thead>
 	<tbody>
-		<tr><td><a href="#at-keyword">at-keyword</a></td><td>105 / 105</td><td>93 / 105</td><td>104 / 105</td></tr><tr><td><a href="#bad-url">bad-url</a></td><td>55 / 55</td><td>18 / 185</td><td>53 / 55</td></tr><tr><td><a href="#colon">colon</a></td><td>10 / 10</td><td>10 / 10</td><td>10 / 10</td></tr><tr><td><a href="#comma">comma</a></td><td>10 / 10</td><td>10 / 10</td><td>10 / 10</td></tr><tr><td><a href="#comment">comment</a></td><td>60 / 60</td><td>56 / 60</td><td>60 / 60</td></tr><tr><td><a href="#digit">digit</a></td><td>100 / 100</td><td>90 / 100</td><td>90 / 100</td></tr><tr><td><a href="#dimension">dimension</a></td><td>55 / 55</td><td>36 / 70</td><td>49 / 55</td></tr><tr><td><a href="#escaped-code-point">escaped-code-point</a></td><td>150 / 150</td><td>72 / 190</td><td>125 / 160</td></tr><tr><td><a href="#full-stop">full-stop</a></td><td>35 / 35</td><td>31 / 35</td><td>34 / 35</td></tr><tr><td><a href="#fuzz">fuzz</a></td><td>110 / 110</td><td>89 / 110</td><td>79 / 130</td></tr><tr><td><a href="#hash">hash</a></td><td>145 / 145</td><td>129 / 145</td><td>137 / 145</td></tr><tr><td><a href="#hyphen-minus">hyphen-minus</a></td><td>60 / 60</td><td>48 / 65</td><td>57 / 60</td></tr><tr><td><a href="#ident">ident</a></td><td>55 / 55</td><td>42 / 60</td><td>55 / 55</td></tr><tr><td><a href="#ident-like">ident-like</a></td><td>156 / 160</td><td>121 / 225</td><td>135 / 180</td></tr><tr><td><a href="#left-curly-bracket">left-curly-bracket</a></td><td>10 / 10</td><td>10 / 10</td><td>10 / 10</td></tr><tr><td><a href="#left-parenthesis">left-parenthesis</a></td><td>10 / 10</td><td>10 / 10</td><td>10 / 10</td></tr><tr><td><a href="#left-square-bracket">left-square-bracket</a></td><td>10 / 10</td><td>10 / 10</td><td>10 / 10</td></tr><tr><td><a href="#less-than">less-than</a></td><td>36 / 55</td><td>42 / 65</td><td>55 / 55</td></tr><tr><td><a href="#number">number</a></td><td>177 / 180</td><td>161 / 180</td><td>162 / 180</td></tr><tr><td><a href="#numeric">numeric</a></td><td>45 / 45</td><td>32 / 50</td><td>40 / 45</td></tr><tr><td><a href="#plus">plus</a></td><td>45 / 45</td><td>40 / 45</td><td>42 / 45</td></tr><tr><td><a href="#reverse-solidus">reverse-solidus</a></td><td>45 / 45</td><td>21 / 55</td><td>43 / 45</td></tr><tr><td><a href="#right-curly-bracket">right-curly-bracket</a></td><td>10 / 10</td><td>10 / 10</td><td>10 / 10</td></tr><tr><td><a href="#right-parenthesis">right-parenthesis</a></td><td>10 / 10</td><td>10 / 10</td><td>10 / 10</td></tr><tr><td><a href="#right-square-bracket">right-square-bracket</a></td><td>10 / 10</td><td>10 / 10</td><td>10 / 10</td></tr><tr><td><a href="#semi-colon">semi-colon</a></td><td>10 / 10</td><td>10 / 10</td><td>10 / 10</td></tr><tr><td><a href="#string">string</a></td><td>113 / 115</td><td>84 / 115</td><td>97 / 115</td></tr><tr><td><a href="#url">url</a></td><td>141 / 195</td><td>63 / 880</td><td>140 / 155</td></tr><tr><td><a href="#whitespace">whitespace</a></td><td>85 / 85</td><td>58 / 135</td><td>85 / 85</td></tr>
+		<tr><td><a href="#at-keyword">at-keyword</a></td><td>105 / 105</td><td>93 / 105</td><td>104 / 105</td><td>53 / 105</td></tr><tr><td><a href="#bad-url">bad-url</a></td><td>55 / 55</td><td>18 / 185</td><td>53 / 55</td><td>22 / 55</td></tr><tr><td><a href="#colon">colon</a></td><td>10 / 10</td><td>10 / 10</td><td>10 / 10</td><td>5 / 10</td></tr><tr><td><a href="#comma">comma</a></td><td>10 / 10</td><td>10 / 10</td><td>10 / 10</td><td>5 / 10</td></tr><tr><td><a href="#comment">comment</a></td><td>60 / 60</td><td>56 / 60</td><td>60 / 60</td><td>7 / 60</td></tr><tr><td><a href="#digit">digit</a></td><td>100 / 100</td><td>90 / 100</td><td>90 / 100</td><td>50 / 100</td></tr><tr><td><a href="#dimension">dimension</a></td><td>55 / 55</td><td>36 / 70</td><td>49 / 55</td><td>24 / 55</td></tr><tr><td><a href="#escaped-code-point">escaped-code-point</a></td><td>150 / 150</td><td>72 / 190</td><td>125 / 160</td><td>62 / 150</td></tr><tr><td><a href="#full-stop">full-stop</a></td><td>35 / 35</td><td>31 / 35</td><td>34 / 35</td><td>18 / 35</td></tr><tr><td><a href="#fuzz">fuzz</a></td><td>110 / 110</td><td>89 / 110</td><td>79 / 130</td><td>59 / 110</td></tr><tr><td><a href="#hash">hash</a></td><td>145 / 145</td><td>129 / 145</td><td>137 / 145</td><td>74 / 145</td></tr><tr><td><a href="#hyphen-minus">hyphen-minus</a></td><td>60 / 60</td><td>48 / 65</td><td>57 / 60</td><td>30 / 60</td></tr><tr><td><a href="#ident">ident</a></td><td>55 / 55</td><td>42 / 60</td><td>55 / 55</td><td>27 / 55</td></tr><tr><td><a href="#ident-like">ident-like</a></td><td>156 / 160</td><td>121 / 225</td><td>135 / 180</td><td>75 / 160</td></tr><tr><td><a href="#left-curly-bracket">left-curly-bracket</a></td><td>10 / 10</td><td>10 / 10</td><td>10 / 10</td><td>5 / 10</td></tr><tr><td><a href="#left-parenthesis">left-parenthesis</a></td><td>10 / 10</td><td>10 / 10</td><td>10 / 10</td><td>5 / 10</td></tr><tr><td><a href="#left-square-bracket">left-square-bracket</a></td><td>10 / 10</td><td>10 / 10</td><td>10 / 10</td><td>5 / 10</td></tr><tr><td><a href="#less-than">less-than</a></td><td>36 / 55</td><td>42 / 65</td><td>55 / 55</td><td>29 / 55</td></tr><tr><td><a href="#number">number</a></td><td>177 / 180</td><td>161 / 180</td><td>162 / 180</td><td>90 / 180</td></tr><tr><td><a href="#numeric">numeric</a></td><td>45 / 45</td><td>32 / 50</td><td>40 / 45</td><td>23 / 45</td></tr><tr><td><a href="#plus">plus</a></td><td>45 / 45</td><td>40 / 45</td><td>42 / 45</td><td>23 / 45</td></tr><tr><td><a href="#reverse-solidus">reverse-solidus</a></td><td>45 / 45</td><td>21 / 55</td><td>43 / 45</td><td>20 / 45</td></tr><tr><td><a href="#right-curly-bracket">right-curly-bracket</a></td><td>10 / 10</td><td>10 / 10</td><td>10 / 10</td><td>5 / 10</td></tr><tr><td><a href="#right-parenthesis">right-parenthesis</a></td><td>10 / 10</td><td>10 / 10</td><td>10 / 10</td><td>5 / 10</td></tr><tr><td><a href="#right-square-bracket">right-square-bracket</a></td><td>10 / 10</td><td>10 / 10</td><td>10 / 10</td><td>5 / 10</td></tr><tr><td><a href="#semi-colon">semi-colon</a></td><td>10 / 10</td><td>10 / 10</td><td>10 / 10</td><td>5 / 10</td></tr><tr><td><a href="#string">string</a></td><td>113 / 115</td><td>84 / 115</td><td>97 / 115</td><td>50 / 115</td></tr><tr><td><a href="#url">url</a></td><td>141 / 195</td><td>63 / 880</td><td>140 / 155</td><td>68 / 155</td></tr><tr><td><a href="#whitespace">whitespace</a></td><td>85 / 85</td><td>58 / 135</td><td>85 / 85</td><td>38 / 85</td></tr>
 	</tbody>
 </table>
 
@@ -87,10 +89,11 @@
 <th>@csstools/css-tokenizer</th>
 <th>@csstools/tokenizer</th>
 <th>css-tree</th>
+<th>parse-css</th>
 </tr>
 </thead>
 	<tbody>
-		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/at-keyword/0001" target="_blank">at-keyword/0001</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/at-keyword/0002" target="_blank">at-keyword/0002</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/at-keyword/0003" target="_blank">at-keyword/0003</a></td><td>15 / 15</td><td>13 / 15</td><td>14 / 15</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/at-keyword/0004" target="_blank">at-keyword/0004</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/at-keyword/0005" target="_blank">at-keyword/0005</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/at-keyword/0006" target="_blank">at-keyword/0006</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/at-keyword/0007" target="_blank">at-keyword/0007</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/at-keyword/0008" target="_blank">at-keyword/0008</a></td><td>30 / 30</td><td>26 / 30</td><td>30 / 30</td></tr>
+		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/at-keyword/0001" target="_blank">at-keyword/0001</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/at-keyword/0002" target="_blank">at-keyword/0002</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/at-keyword/0003" target="_blank">at-keyword/0003</a></td><td>15 / 15</td><td>13 / 15</td><td>14 / 15</td><td>8 / 15</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/at-keyword/0004" target="_blank">at-keyword/0004</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/at-keyword/0005" target="_blank">at-keyword/0005</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/at-keyword/0006" target="_blank">at-keyword/0006</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/at-keyword/0007" target="_blank">at-keyword/0007</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/at-keyword/0008" target="_blank">at-keyword/0008</a></td><td>30 / 30</td><td>26 / 30</td><td>30 / 30</td><td>15 / 30</td></tr>
 	</tbody>
 </table>
 
@@ -103,10 +106,11 @@
 <th>@csstools/css-tokenizer</th>
 <th>@csstools/tokenizer</th>
 <th>css-tree</th>
+<th>parse-css</th>
 </tr>
 </thead>
 	<tbody>
-		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/bad-url/0001" target="_blank">bad-url/0001</a></td><td>5 / 5</td><td>1 / 10</td><td>4 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/bad-url/0002" target="_blank">bad-url/0002</a></td><td>5 / 5</td><td>1 / 20</td><td>4 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/bad-url/0003" target="_blank">bad-url/0003</a></td><td>5 / 5</td><td>2 / 30</td><td>5 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/bad-url/0004" target="_blank">bad-url/0004</a></td><td>10 / 10</td><td>4 / 35</td><td>10 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/bad-url/0005" target="_blank">bad-url/0005</a></td><td>5 / 5</td><td>2 / 30</td><td>5 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/bad-url/0006" target="_blank">bad-url/0006</a></td><td>5 / 5</td><td>2 / 20</td><td>5 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/bad-url/0007" target="_blank">bad-url/0007</a></td><td>10 / 10</td><td>3 / 25</td><td>10 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/bad-url/0008" target="_blank">bad-url/0008</a></td><td>10 / 10</td><td>3 / 15</td><td>10 / 10</td></tr>
+		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/bad-url/0001" target="_blank">bad-url/0001</a></td><td>5 / 5</td><td>1 / 10</td><td>4 / 5</td><td>2 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/bad-url/0002" target="_blank">bad-url/0002</a></td><td>5 / 5</td><td>1 / 20</td><td>4 / 5</td><td>2 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/bad-url/0003" target="_blank">bad-url/0003</a></td><td>5 / 5</td><td>2 / 30</td><td>5 / 5</td><td>2 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/bad-url/0004" target="_blank">bad-url/0004</a></td><td>10 / 10</td><td>4 / 35</td><td>10 / 10</td><td>4 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/bad-url/0005" target="_blank">bad-url/0005</a></td><td>5 / 5</td><td>2 / 30</td><td>5 / 5</td><td>2 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/bad-url/0006" target="_blank">bad-url/0006</a></td><td>5 / 5</td><td>2 / 20</td><td>5 / 5</td><td>2 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/bad-url/0007" target="_blank">bad-url/0007</a></td><td>10 / 10</td><td>3 / 25</td><td>10 / 10</td><td>4 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/bad-url/0008" target="_blank">bad-url/0008</a></td><td>10 / 10</td><td>3 / 15</td><td>10 / 10</td><td>4 / 10</td></tr>
 	</tbody>
 </table>
 
@@ -119,10 +123,11 @@
 <th>@csstools/css-tokenizer</th>
 <th>@csstools/tokenizer</th>
 <th>css-tree</th>
+<th>parse-css</th>
 </tr>
 </thead>
 	<tbody>
-		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/colon/0001" target="_blank">colon/0001</a></td><td>10 / 10</td><td>10 / 10</td><td>10 / 10</td></tr>
+		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/colon/0001" target="_blank">colon/0001</a></td><td>10 / 10</td><td>10 / 10</td><td>10 / 10</td><td>5 / 10</td></tr>
 	</tbody>
 </table>
 
@@ -135,10 +140,11 @@
 <th>@csstools/css-tokenizer</th>
 <th>@csstools/tokenizer</th>
 <th>css-tree</th>
+<th>parse-css</th>
 </tr>
 </thead>
 	<tbody>
-		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/comma/0001" target="_blank">comma/0001</a></td><td>10 / 10</td><td>10 / 10</td><td>10 / 10</td></tr>
+		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/comma/0001" target="_blank">comma/0001</a></td><td>10 / 10</td><td>10 / 10</td><td>10 / 10</td><td>5 / 10</td></tr>
 	</tbody>
 </table>
 
@@ -151,10 +157,11 @@
 <th>@csstools/css-tokenizer</th>
 <th>@csstools/tokenizer</th>
 <th>css-tree</th>
+<th>parse-css</th>
 </tr>
 </thead>
 	<tbody>
-		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/comment/0001" target="_blank">comment/0001</a></td><td>10 / 10</td><td>10 / 10</td><td>10 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/comment/0002" target="_blank">comment/0002</a></td><td>5 / 5</td><td>5 / 5</td><td>5 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/comment/0003" target="_blank">comment/0003</a></td><td>20 / 20</td><td>18 / 20</td><td>20 / 20</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/comment/0004" target="_blank">comment/0004</a></td><td>20 / 20</td><td>18 / 20</td><td>20 / 20</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/comment/0005" target="_blank">comment/0005</a></td><td>5 / 5</td><td>5 / 5</td><td>5 / 5</td></tr>
+		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/comment/0001" target="_blank">comment/0001</a></td><td>10 / 10</td><td>10 / 10</td><td>10 / 10</td><td>1 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/comment/0002" target="_blank">comment/0002</a></td><td>5 / 5</td><td>5 / 5</td><td>5 / 5</td><td>1 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/comment/0003" target="_blank">comment/0003</a></td><td>20 / 20</td><td>18 / 20</td><td>20 / 20</td><td>3 / 20</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/comment/0004" target="_blank">comment/0004</a></td><td>20 / 20</td><td>18 / 20</td><td>20 / 20</td><td>1 / 20</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/comment/0005" target="_blank">comment/0005</a></td><td>5 / 5</td><td>5 / 5</td><td>5 / 5</td><td>1 / 5</td></tr>
 	</tbody>
 </table>
 
@@ -167,10 +174,11 @@
 <th>@csstools/css-tokenizer</th>
 <th>@csstools/tokenizer</th>
 <th>css-tree</th>
+<th>parse-css</th>
 </tr>
 </thead>
 	<tbody>
-		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/digit/0001" target="_blank">digit/0001</a></td><td>100 / 100</td><td>90 / 100</td><td>90 / 100</td></tr>
+		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/digit/0001" target="_blank">digit/0001</a></td><td>100 / 100</td><td>90 / 100</td><td>90 / 100</td><td>50 / 100</td></tr>
 	</tbody>
 </table>
 
@@ -183,10 +191,11 @@
 <th>@csstools/css-tokenizer</th>
 <th>@csstools/tokenizer</th>
 <th>css-tree</th>
+<th>parse-css</th>
 </tr>
 </thead>
 	<tbody>
-		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/dimension/0001" target="_blank">dimension/0001</a></td><td>10 / 10</td><td>8 / 10</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/dimension/0002" target="_blank">dimension/0002</a></td><td>10 / 10</td><td>3 / 20</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/dimension/0003" target="_blank">dimension/0003</a></td><td>10 / 10</td><td>8 / 10</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/dimension/0004" target="_blank">dimension/0004</a></td><td>10 / 10</td><td>8 / 10</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/dimension/0005" target="_blank">dimension/0005</a></td><td>10 / 10</td><td>8 / 10</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/dimension/0006" target="_blank">dimension/0006</a></td><td>5 / 5</td><td>1 / 10</td><td>4 / 5</td></tr>
+		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/dimension/0001" target="_blank">dimension/0001</a></td><td>10 / 10</td><td>8 / 10</td><td>9 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/dimension/0002" target="_blank">dimension/0002</a></td><td>10 / 10</td><td>3 / 20</td><td>9 / 10</td><td>4 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/dimension/0003" target="_blank">dimension/0003</a></td><td>10 / 10</td><td>8 / 10</td><td>9 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/dimension/0004" target="_blank">dimension/0004</a></td><td>10 / 10</td><td>8 / 10</td><td>9 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/dimension/0005" target="_blank">dimension/0005</a></td><td>10 / 10</td><td>8 / 10</td><td>9 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/dimension/0006" target="_blank">dimension/0006</a></td><td>5 / 5</td><td>1 / 10</td><td>4 / 5</td><td>0 / 5</td></tr>
 	</tbody>
 </table>
 
@@ -199,10 +208,11 @@
 <th>@csstools/css-tokenizer</th>
 <th>@csstools/tokenizer</th>
 <th>css-tree</th>
+<th>parse-css</th>
 </tr>
 </thead>
 	<tbody>
-		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/escaped-code-point/0001" target="_blank">escaped-code-point/0001</a></td><td>5 / 5</td><td>2 / 5</td><td>3 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/escaped-code-point/0002" target="_blank">escaped-code-point/0002</a></td><td>5 / 5</td><td>2 / 5</td><td>5 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/escaped-code-point/0003" target="_blank">escaped-code-point/0003</a></td><td>5 / 5</td><td>2 / 5</td><td>5 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/escaped-code-point/0004" target="_blank">escaped-code-point/0004</a></td><td>10 / 10</td><td>4 / 20</td><td>10 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/escaped-code-point/0005" target="_blank">escaped-code-point/0005</a></td><td>10 / 10</td><td>5 / 10</td><td>10 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/escaped-code-point/0006" target="_blank">escaped-code-point/0006</a></td><td>20 / 20</td><td>3 / 30</td><td>19 / 20</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/escaped-code-point/0007" target="_blank">escaped-code-point/0007</a></td><td>30 / 30</td><td>24 / 30</td><td>30 / 30</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/escaped-code-point/0008" target="_blank">escaped-code-point/0008</a></td><td>5 / 5</td><td>2 / 10</td><td>5 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/escaped-code-point/0009" target="_blank">escaped-code-point/0009</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/escaped-code-point/0010" target="_blank">escaped-code-point/0010</a></td><td>5 / 5</td><td>2 / 10</td><td>5 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/escaped-code-point/0011" target="_blank">escaped-code-point/0011</a></td><td>5 / 5</td><td>2 / 10</td><td>5 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/escaped-code-point/0012" target="_blank">escaped-code-point/0012</a></td><td>5 / 5</td><td>2 / 10</td><td>5 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/escaped-code-point/0013" target="_blank">escaped-code-point/0013</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/escaped-code-point/0014" target="_blank">escaped-code-point/0014</a></td><td>10 / 10</td><td>2 / 10</td><td>1 / 15</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/escaped-code-point/0015" target="_blank">escaped-code-point/0015</a></td><td>15 / 15</td><td>2 / 15</td><td>2 / 20</td></tr>
+		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/escaped-code-point/0001" target="_blank">escaped-code-point/0001</a></td><td>5 / 5</td><td>2 / 5</td><td>3 / 5</td><td>2 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/escaped-code-point/0002" target="_blank">escaped-code-point/0002</a></td><td>5 / 5</td><td>2 / 5</td><td>5 / 5</td><td>0 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/escaped-code-point/0003" target="_blank">escaped-code-point/0003</a></td><td>5 / 5</td><td>2 / 5</td><td>5 / 5</td><td>3 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/escaped-code-point/0004" target="_blank">escaped-code-point/0004</a></td><td>10 / 10</td><td>4 / 20</td><td>10 / 10</td><td>4 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/escaped-code-point/0005" target="_blank">escaped-code-point/0005</a></td><td>10 / 10</td><td>5 / 10</td><td>10 / 10</td><td>4 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/escaped-code-point/0006" target="_blank">escaped-code-point/0006</a></td><td>20 / 20</td><td>3 / 30</td><td>19 / 20</td><td>10 / 20</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/escaped-code-point/0007" target="_blank">escaped-code-point/0007</a></td><td>30 / 30</td><td>24 / 30</td><td>30 / 30</td><td>16 / 30</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/escaped-code-point/0008" target="_blank">escaped-code-point/0008</a></td><td>5 / 5</td><td>2 / 10</td><td>5 / 5</td><td>2 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/escaped-code-point/0009" target="_blank">escaped-code-point/0009</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td><td>4 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/escaped-code-point/0010" target="_blank">escaped-code-point/0010</a></td><td>5 / 5</td><td>2 / 10</td><td>5 / 5</td><td>2 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/escaped-code-point/0011" target="_blank">escaped-code-point/0011</a></td><td>5 / 5</td><td>2 / 10</td><td>5 / 5</td><td>1 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/escaped-code-point/0012" target="_blank">escaped-code-point/0012</a></td><td>5 / 5</td><td>2 / 10</td><td>5 / 5</td><td>1 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/escaped-code-point/0013" target="_blank">escaped-code-point/0013</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td><td>4 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/escaped-code-point/0014" target="_blank">escaped-code-point/0014</a></td><td>10 / 10</td><td>2 / 10</td><td>1 / 15</td><td>3 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/escaped-code-point/0015" target="_blank">escaped-code-point/0015</a></td><td>15 / 15</td><td>2 / 15</td><td>2 / 20</td><td>6 / 15</td></tr>
 	</tbody>
 </table>
 
@@ -215,10 +225,11 @@
 <th>@csstools/css-tokenizer</th>
 <th>@csstools/tokenizer</th>
 <th>css-tree</th>
+<th>parse-css</th>
 </tr>
 </thead>
 	<tbody>
-		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/full-stop/0001" target="_blank">full-stop/0001</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/full-stop/0002" target="_blank">full-stop/0002</a></td><td>15 / 15</td><td>13 / 15</td><td>15 / 15</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/full-stop/0003" target="_blank">full-stop/0003</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td></tr>
+		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/full-stop/0001" target="_blank">full-stop/0001</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/full-stop/0002" target="_blank">full-stop/0002</a></td><td>15 / 15</td><td>13 / 15</td><td>15 / 15</td><td>8 / 15</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/full-stop/0003" target="_blank">full-stop/0003</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td><td>5 / 10</td></tr>
 	</tbody>
 </table>
 
@@ -231,10 +242,11 @@
 <th>@csstools/css-tokenizer</th>
 <th>@csstools/tokenizer</th>
 <th>css-tree</th>
+<th>parse-css</th>
 </tr>
 </thead>
 	<tbody>
-		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/fuzz/4e630a47-507b-4b79-b00f-57f7dc1cc79d" target="_blank">fuzz/4e630a47-507b-4b79-b00f-57f7dc1cc79d</a></td><td>50 / 50</td><td>41 / 50</td><td>26 / 60</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/fuzz/91de56d3-d1c7-41c9-93e2-4b0770e36e79" target="_blank">fuzz/91de56d3-d1c7-41c9-93e2-4b0770e36e79</a></td><td>30 / 30</td><td>24 / 30</td><td>26 / 35</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/fuzz/eb11f9d4-f8ef-4e11-88dc-2cbf7f56e537" target="_blank">fuzz/eb11f9d4-f8ef-4e11-88dc-2cbf7f56e537</a></td><td>30 / 30</td><td>24 / 30</td><td>27 / 35</td></tr>
+		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/fuzz/4e630a47-507b-4b79-b00f-57f7dc1cc79d" target="_blank">fuzz/4e630a47-507b-4b79-b00f-57f7dc1cc79d</a></td><td>50 / 50</td><td>41 / 50</td><td>26 / 60</td><td>26 / 50</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/fuzz/91de56d3-d1c7-41c9-93e2-4b0770e36e79" target="_blank">fuzz/91de56d3-d1c7-41c9-93e2-4b0770e36e79</a></td><td>30 / 30</td><td>24 / 30</td><td>26 / 35</td><td>16 / 30</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/fuzz/eb11f9d4-f8ef-4e11-88dc-2cbf7f56e537" target="_blank">fuzz/eb11f9d4-f8ef-4e11-88dc-2cbf7f56e537</a></td><td>30 / 30</td><td>24 / 30</td><td>27 / 35</td><td>17 / 30</td></tr>
 	</tbody>
 </table>
 
@@ -247,10 +259,11 @@
 <th>@csstools/css-tokenizer</th>
 <th>@csstools/tokenizer</th>
 <th>css-tree</th>
+<th>parse-css</th>
 </tr>
 </thead>
 	<tbody>
-		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/hash/0001" target="_blank">hash/0001</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/hash/0002" target="_blank">hash/0002</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/hash/0003" target="_blank">hash/0003</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/hash/0004" target="_blank">hash/0004</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/hash/0005" target="_blank">hash/0005</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/hash/0006" target="_blank">hash/0006</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/hash/0007" target="_blank">hash/0007</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/hash/0008" target="_blank">hash/0008</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/hash/0009" target="_blank">hash/0009</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/hash/0010" target="_blank">hash/0010</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/hash/0011" target="_blank">hash/0011</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/hash/0012" target="_blank">hash/0012</a></td><td>15 / 15</td><td>13 / 15</td><td>15 / 15</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/hash/0013" target="_blank">hash/0013</a></td><td>15 / 15</td><td>13 / 15</td><td>15 / 15</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/hash/0014" target="_blank">hash/0014</a></td><td>5 / 5</td><td>4 / 5</td><td>5 / 5</td></tr>
+		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/hash/0001" target="_blank">hash/0001</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/hash/0002" target="_blank">hash/0002</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/hash/0003" target="_blank">hash/0003</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/hash/0004" target="_blank">hash/0004</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/hash/0005" target="_blank">hash/0005</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/hash/0006" target="_blank">hash/0006</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/hash/0007" target="_blank">hash/0007</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/hash/0008" target="_blank">hash/0008</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/hash/0009" target="_blank">hash/0009</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/hash/0010" target="_blank">hash/0010</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/hash/0011" target="_blank">hash/0011</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/hash/0012" target="_blank">hash/0012</a></td><td>15 / 15</td><td>13 / 15</td><td>15 / 15</td><td>8 / 15</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/hash/0013" target="_blank">hash/0013</a></td><td>15 / 15</td><td>13 / 15</td><td>15 / 15</td><td>8 / 15</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/hash/0014" target="_blank">hash/0014</a></td><td>5 / 5</td><td>4 / 5</td><td>5 / 5</td><td>3 / 5</td></tr>
 	</tbody>
 </table>
 
@@ -263,10 +276,11 @@
 <th>@csstools/css-tokenizer</th>
 <th>@csstools/tokenizer</th>
 <th>css-tree</th>
+<th>parse-css</th>
 </tr>
 </thead>
 	<tbody>
-		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/hyphen-minus/0001" target="_blank">hyphen-minus/0001</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/hyphen-minus/0002" target="_blank">hyphen-minus/0002</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/hyphen-minus/0003" target="_blank">hyphen-minus/0003</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/hyphen-minus/0004" target="_blank">hyphen-minus/0004</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/hyphen-minus/0005" target="_blank">hyphen-minus/0005</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/hyphen-minus/0006" target="_blank">hyphen-minus/0006</a></td><td>10 / 10</td><td>3 / 15</td><td>10 / 10</td></tr>
+		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/hyphen-minus/0001" target="_blank">hyphen-minus/0001</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/hyphen-minus/0002" target="_blank">hyphen-minus/0002</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/hyphen-minus/0003" target="_blank">hyphen-minus/0003</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/hyphen-minus/0004" target="_blank">hyphen-minus/0004</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/hyphen-minus/0005" target="_blank">hyphen-minus/0005</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/hyphen-minus/0006" target="_blank">hyphen-minus/0006</a></td><td>10 / 10</td><td>3 / 15</td><td>10 / 10</td><td>5 / 10</td></tr>
 	</tbody>
 </table>
 
@@ -279,10 +293,11 @@
 <th>@csstools/css-tokenizer</th>
 <th>@csstools/tokenizer</th>
 <th>css-tree</th>
+<th>parse-css</th>
 </tr>
 </thead>
 	<tbody>
-		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/ident/0001" target="_blank">ident/0001</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/ident/0002" target="_blank">ident/0002</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/ident/0003" target="_blank">ident/0003</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/ident/0004" target="_blank">ident/0004</a></td><td>15 / 15</td><td>13 / 15</td><td>15 / 15</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/ident/0005" target="_blank">ident/0005</a></td><td>10 / 10</td><td>2 / 15</td><td>10 / 10</td></tr>
+		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/ident/0001" target="_blank">ident/0001</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/ident/0002" target="_blank">ident/0002</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/ident/0003" target="_blank">ident/0003</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/ident/0004" target="_blank">ident/0004</a></td><td>15 / 15</td><td>13 / 15</td><td>15 / 15</td><td>7 / 15</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/ident/0005" target="_blank">ident/0005</a></td><td>10 / 10</td><td>2 / 15</td><td>10 / 10</td><td>5 / 10</td></tr>
 	</tbody>
 </table>
 
@@ -295,10 +310,11 @@
 <th>@csstools/css-tokenizer</th>
 <th>@csstools/tokenizer</th>
 <th>css-tree</th>
+<th>parse-css</th>
 </tr>
 </thead>
 	<tbody>
-		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/ident-like/0001" target="_blank">ident-like/0001</a></td><td>10 / 10</td><td>2 / 20</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/ident-like/0002" target="_blank">ident-like/0002</a></td><td>10 / 10</td><td>3 / 30</td><td>1 / 20</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/ident-like/0003" target="_blank">ident-like/0003</a></td><td>10 / 10</td><td>3 / 30</td><td>1 / 20</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/ident-like/0004" target="_blank">ident-like/0004</a></td><td>20 / 20</td><td>18 / 20</td><td>19 / 20</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/ident-like/0005" target="_blank">ident-like/0005</a></td><td>25 / 25</td><td>23 / 25</td><td>24 / 25</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/ident-like/0006" target="_blank">ident-like/0006</a></td><td>23 / 25</td><td>23 / 25</td><td>24 / 25</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/ident-like/0007" target="_blank">ident-like/0007</a></td><td>23 / 25</td><td>23 / 25</td><td>24 / 25</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/ident-like/0008" target="_blank">ident-like/0008</a></td><td>25 / 25</td><td>23 / 25</td><td>24 / 25</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/ident-like/0009" target="_blank">ident-like/0009</a></td><td>10 / 10</td><td>3 / 25</td><td>9 / 10</td></tr>
+		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/ident-like/0001" target="_blank">ident-like/0001</a></td><td>10 / 10</td><td>2 / 20</td><td>9 / 10</td><td>4 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/ident-like/0002" target="_blank">ident-like/0002</a></td><td>10 / 10</td><td>3 / 30</td><td>1 / 20</td><td>4 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/ident-like/0003" target="_blank">ident-like/0003</a></td><td>10 / 10</td><td>3 / 30</td><td>1 / 20</td><td>4 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/ident-like/0004" target="_blank">ident-like/0004</a></td><td>20 / 20</td><td>18 / 20</td><td>19 / 20</td><td>10 / 20</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/ident-like/0005" target="_blank">ident-like/0005</a></td><td>25 / 25</td><td>23 / 25</td><td>24 / 25</td><td>13 / 25</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/ident-like/0006" target="_blank">ident-like/0006</a></td><td>23 / 25</td><td>23 / 25</td><td>24 / 25</td><td>12 / 25</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/ident-like/0007" target="_blank">ident-like/0007</a></td><td>23 / 25</td><td>23 / 25</td><td>24 / 25</td><td>12 / 25</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/ident-like/0008" target="_blank">ident-like/0008</a></td><td>25 / 25</td><td>23 / 25</td><td>24 / 25</td><td>12 / 25</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/ident-like/0009" target="_blank">ident-like/0009</a></td><td>10 / 10</td><td>3 / 25</td><td>9 / 10</td><td>4 / 10</td></tr>
 	</tbody>
 </table>
 
@@ -311,10 +327,11 @@
 <th>@csstools/css-tokenizer</th>
 <th>@csstools/tokenizer</th>
 <th>css-tree</th>
+<th>parse-css</th>
 </tr>
 </thead>
 	<tbody>
-		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/left-curly-bracket/0001" target="_blank">left-curly-bracket/0001</a></td><td>10 / 10</td><td>10 / 10</td><td>10 / 10</td></tr>
+		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/left-curly-bracket/0001" target="_blank">left-curly-bracket/0001</a></td><td>10 / 10</td><td>10 / 10</td><td>10 / 10</td><td>5 / 10</td></tr>
 	</tbody>
 </table>
 
@@ -327,10 +344,11 @@
 <th>@csstools/css-tokenizer</th>
 <th>@csstools/tokenizer</th>
 <th>css-tree</th>
+<th>parse-css</th>
 </tr>
 </thead>
 	<tbody>
-		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/left-parenthesis/0001" target="_blank">left-parenthesis/0001</a></td><td>10 / 10</td><td>10 / 10</td><td>10 / 10</td></tr>
+		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/left-parenthesis/0001" target="_blank">left-parenthesis/0001</a></td><td>10 / 10</td><td>10 / 10</td><td>10 / 10</td><td>5 / 10</td></tr>
 	</tbody>
 </table>
 
@@ -343,10 +361,11 @@
 <th>@csstools/css-tokenizer</th>
 <th>@csstools/tokenizer</th>
 <th>css-tree</th>
+<th>parse-css</th>
 </tr>
 </thead>
 	<tbody>
-		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/left-square-bracket/0001" target="_blank">left-square-bracket/0001</a></td><td>10 / 10</td><td>10 / 10</td><td>10 / 10</td></tr>
+		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/left-square-bracket/0001" target="_blank">left-square-bracket/0001</a></td><td>10 / 10</td><td>10 / 10</td><td>10 / 10</td><td>5 / 10</td></tr>
 	</tbody>
 </table>
 
@@ -359,10 +378,11 @@
 <th>@csstools/css-tokenizer</th>
 <th>@csstools/tokenizer</th>
 <th>css-tree</th>
+<th>parse-css</th>
 </tr>
 </thead>
 	<tbody>
-		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/less-than/0001" target="_blank">less-than/0001</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/less-than/0002" target="_blank">less-than/0002</a></td><td>10 / 10</td><td>3 / 20</td><td>10 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/less-than/0003" target="_blank">less-than/0003</a></td><td>15 / 15</td><td>13 / 15</td><td>15 / 15</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/less-than/0004" target="_blank">less-than/0004</a></td><td>1 / 20</td><td>17 / 20</td><td>20 / 20</td></tr>
+		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/less-than/0001" target="_blank">less-than/0001</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/less-than/0002" target="_blank">less-than/0002</a></td><td>10 / 10</td><td>3 / 20</td><td>10 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/less-than/0003" target="_blank">less-than/0003</a></td><td>15 / 15</td><td>13 / 15</td><td>15 / 15</td><td>8 / 15</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/less-than/0004" target="_blank">less-than/0004</a></td><td>1 / 20</td><td>17 / 20</td><td>20 / 20</td><td>11 / 20</td></tr>
 	</tbody>
 </table>
 
@@ -375,10 +395,11 @@
 <th>@csstools/css-tokenizer</th>
 <th>@csstools/tokenizer</th>
 <th>css-tree</th>
+<th>parse-css</th>
 </tr>
 </thead>
 	<tbody>
-		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/number/0001" target="_blank">number/0001</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/number/0002" target="_blank">number/0002</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/number/0003" target="_blank">number/0003</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/number/0004" target="_blank">number/0004</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/number/0005" target="_blank">number/0005</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/number/0006" target="_blank">number/0006</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/number/0007" target="_blank">number/0007</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/number/0008" target="_blank">number/0008</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/number/0009" target="_blank">number/0009</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/number/0010" target="_blank">number/0010</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/number/0011" target="_blank">number/0011</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/number/0012" target="_blank">number/0012</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/number/0013" target="_blank">number/0013</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/number/0014" target="_blank">number/0014</a></td><td>9 / 10</td><td>9 / 10</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/number/0015" target="_blank">number/0015</a></td><td>9 / 10</td><td>9 / 10</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/number/0016" target="_blank">number/0016</a></td><td>9 / 10</td><td>9 / 10</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/number/0017" target="_blank">number/0017</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/number/0018" target="_blank">number/0018</a></td><td>10 / 10</td><td>8 / 10</td><td>9 / 10</td></tr>
+		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/number/0001" target="_blank">number/0001</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/number/0002" target="_blank">number/0002</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/number/0003" target="_blank">number/0003</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/number/0004" target="_blank">number/0004</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/number/0005" target="_blank">number/0005</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/number/0006" target="_blank">number/0006</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/number/0007" target="_blank">number/0007</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/number/0008" target="_blank">number/0008</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/number/0009" target="_blank">number/0009</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/number/0010" target="_blank">number/0010</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/number/0011" target="_blank">number/0011</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/number/0012" target="_blank">number/0012</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/number/0013" target="_blank">number/0013</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/number/0014" target="_blank">number/0014</a></td><td>9 / 10</td><td>9 / 10</td><td>9 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/number/0015" target="_blank">number/0015</a></td><td>9 / 10</td><td>9 / 10</td><td>9 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/number/0016" target="_blank">number/0016</a></td><td>9 / 10</td><td>9 / 10</td><td>9 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/number/0017" target="_blank">number/0017</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/number/0018" target="_blank">number/0018</a></td><td>10 / 10</td><td>8 / 10</td><td>9 / 10</td><td>5 / 10</td></tr>
 	</tbody>
 </table>
 
@@ -391,10 +412,11 @@
 <th>@csstools/css-tokenizer</th>
 <th>@csstools/tokenizer</th>
 <th>css-tree</th>
+<th>parse-css</th>
 </tr>
 </thead>
 	<tbody>
-		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/numeric/0001" target="_blank">numeric/0001</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/numeric/0002" target="_blank">numeric/0002</a></td><td>10 / 10</td><td>8 / 10</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/numeric/0003" target="_blank">numeric/0003</a></td><td>10 / 10</td><td>2 / 15</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/numeric/0004" target="_blank">numeric/0004</a></td><td>15 / 15</td><td>13 / 15</td><td>13 / 15</td></tr>
+		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/numeric/0001" target="_blank">numeric/0001</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/numeric/0002" target="_blank">numeric/0002</a></td><td>10 / 10</td><td>8 / 10</td><td>9 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/numeric/0003" target="_blank">numeric/0003</a></td><td>10 / 10</td><td>2 / 15</td><td>9 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/numeric/0004" target="_blank">numeric/0004</a></td><td>15 / 15</td><td>13 / 15</td><td>13 / 15</td><td>8 / 15</td></tr>
 	</tbody>
 </table>
 
@@ -407,10 +429,11 @@
 <th>@csstools/css-tokenizer</th>
 <th>@csstools/tokenizer</th>
 <th>css-tree</th>
+<th>parse-css</th>
 </tr>
 </thead>
 	<tbody>
-		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/plus/0001" target="_blank">plus/0001</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/plus/0002" target="_blank">plus/0002</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/plus/0003" target="_blank">plus/0003</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/plus/0004" target="_blank">plus/0004</a></td><td>15 / 15</td><td>13 / 15</td><td>14 / 15</td></tr>
+		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/plus/0001" target="_blank">plus/0001</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/plus/0002" target="_blank">plus/0002</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/plus/0003" target="_blank">plus/0003</a></td><td>10 / 10</td><td>9 / 10</td><td>9 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/plus/0004" target="_blank">plus/0004</a></td><td>15 / 15</td><td>13 / 15</td><td>14 / 15</td><td>8 / 15</td></tr>
 	</tbody>
 </table>
 
@@ -423,10 +446,11 @@
 <th>@csstools/css-tokenizer</th>
 <th>@csstools/tokenizer</th>
 <th>css-tree</th>
+<th>parse-css</th>
 </tr>
 </thead>
 	<tbody>
-		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/reverse-solidus/0001" target="_blank">reverse-solidus/0001</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/reverse-solidus/0002" target="_blank">reverse-solidus/0002</a></td><td>10 / 10</td><td>2 / 10</td><td>10 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/reverse-solidus/0003" target="_blank">reverse-solidus/0003</a></td><td>10 / 10</td><td>4 / 10</td><td>10 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/reverse-solidus/0004" target="_blank">reverse-solidus/0004</a></td><td>10 / 10</td><td>4 / 20</td><td>10 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/reverse-solidus/0005" target="_blank">reverse-solidus/0005</a></td><td>5 / 5</td><td>2 / 5</td><td>3 / 5</td></tr>
+		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/reverse-solidus/0001" target="_blank">reverse-solidus/0001</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td><td>4 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/reverse-solidus/0002" target="_blank">reverse-solidus/0002</a></td><td>10 / 10</td><td>2 / 10</td><td>10 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/reverse-solidus/0003" target="_blank">reverse-solidus/0003</a></td><td>10 / 10</td><td>4 / 10</td><td>10 / 10</td><td>5 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/reverse-solidus/0004" target="_blank">reverse-solidus/0004</a></td><td>10 / 10</td><td>4 / 20</td><td>10 / 10</td><td>4 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/reverse-solidus/0005" target="_blank">reverse-solidus/0005</a></td><td>5 / 5</td><td>2 / 5</td><td>3 / 5</td><td>2 / 5</td></tr>
 	</tbody>
 </table>
 
@@ -439,10 +463,11 @@
 <th>@csstools/css-tokenizer</th>
 <th>@csstools/tokenizer</th>
 <th>css-tree</th>
+<th>parse-css</th>
 </tr>
 </thead>
 	<tbody>
-		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/right-curly-bracket/0001" target="_blank">right-curly-bracket/0001</a></td><td>10 / 10</td><td>10 / 10</td><td>10 / 10</td></tr>
+		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/right-curly-bracket/0001" target="_blank">right-curly-bracket/0001</a></td><td>10 / 10</td><td>10 / 10</td><td>10 / 10</td><td>5 / 10</td></tr>
 	</tbody>
 </table>
 
@@ -455,10 +480,11 @@
 <th>@csstools/css-tokenizer</th>
 <th>@csstools/tokenizer</th>
 <th>css-tree</th>
+<th>parse-css</th>
 </tr>
 </thead>
 	<tbody>
-		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/right-parenthesis/0001" target="_blank">right-parenthesis/0001</a></td><td>10 / 10</td><td>10 / 10</td><td>10 / 10</td></tr>
+		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/right-parenthesis/0001" target="_blank">right-parenthesis/0001</a></td><td>10 / 10</td><td>10 / 10</td><td>10 / 10</td><td>5 / 10</td></tr>
 	</tbody>
 </table>
 
@@ -471,10 +497,11 @@
 <th>@csstools/css-tokenizer</th>
 <th>@csstools/tokenizer</th>
 <th>css-tree</th>
+<th>parse-css</th>
 </tr>
 </thead>
 	<tbody>
-		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/right-square-bracket/0001" target="_blank">right-square-bracket/0001</a></td><td>10 / 10</td><td>10 / 10</td><td>10 / 10</td></tr>
+		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/right-square-bracket/0001" target="_blank">right-square-bracket/0001</a></td><td>10 / 10</td><td>10 / 10</td><td>10 / 10</td><td>5 / 10</td></tr>
 	</tbody>
 </table>
 
@@ -487,10 +514,11 @@
 <th>@csstools/css-tokenizer</th>
 <th>@csstools/tokenizer</th>
 <th>css-tree</th>
+<th>parse-css</th>
 </tr>
 </thead>
 	<tbody>
-		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/semi-colon/0001" target="_blank">semi-colon/0001</a></td><td>10 / 10</td><td>10 / 10</td><td>10 / 10</td></tr>
+		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/semi-colon/0001" target="_blank">semi-colon/0001</a></td><td>10 / 10</td><td>10 / 10</td><td>10 / 10</td><td>5 / 10</td></tr>
 	</tbody>
 </table>
 
@@ -503,10 +531,11 @@
 <th>@csstools/css-tokenizer</th>
 <th>@csstools/tokenizer</th>
 <th>css-tree</th>
+<th>parse-css</th>
 </tr>
 </thead>
 	<tbody>
-		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/string/0001" target="_blank">string/0001</a></td><td>20 / 20</td><td>18 / 20</td><td>20 / 20</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/string/0002" target="_blank">string/0002</a></td><td>5 / 5</td><td>4 / 5</td><td>5 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/string/0003" target="_blank">string/0003</a></td><td>18 / 20</td><td>2 / 20</td><td>3 / 20</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/string/0004" target="_blank">string/0004</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/string/0005" target="_blank">string/0005</a></td><td>5 / 5</td><td>2 / 5</td><td>5 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/string/0006" target="_blank">string/0006</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/string/0007" target="_blank">string/0007</a></td><td>5 / 5</td><td>4 / 5</td><td>4 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/string/0008" target="_blank">string/0008</a></td><td>20 / 20</td><td>18 / 20</td><td>20 / 20</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/string/0009" target="_blank">string/0009</a></td><td>20 / 20</td><td>18 / 20</td><td>20 / 20</td></tr>
+		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/string/0001" target="_blank">string/0001</a></td><td>20 / 20</td><td>18 / 20</td><td>20 / 20</td><td>9 / 20</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/string/0002" target="_blank">string/0002</a></td><td>5 / 5</td><td>4 / 5</td><td>5 / 5</td><td>2 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/string/0003" target="_blank">string/0003</a></td><td>18 / 20</td><td>2 / 20</td><td>3 / 20</td><td>9 / 20</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/string/0004" target="_blank">string/0004</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td><td>4 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/string/0005" target="_blank">string/0005</a></td><td>5 / 5</td><td>2 / 5</td><td>5 / 5</td><td>2 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/string/0006" target="_blank">string/0006</a></td><td>10 / 10</td><td>9 / 10</td><td>10 / 10</td><td>4 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/string/0007" target="_blank">string/0007</a></td><td>5 / 5</td><td>4 / 5</td><td>4 / 5</td><td>2 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/string/0008" target="_blank">string/0008</a></td><td>20 / 20</td><td>18 / 20</td><td>20 / 20</td><td>9 / 20</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/string/0009" target="_blank">string/0009</a></td><td>20 / 20</td><td>18 / 20</td><td>20 / 20</td><td>9 / 20</td></tr>
 	</tbody>
 </table>
 
@@ -519,10 +548,11 @@
 <th>@csstools/css-tokenizer</th>
 <th>@csstools/tokenizer</th>
 <th>css-tree</th>
+<th>parse-css</th>
 </tr>
 </thead>
 	<tbody>
-		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/url/0001" target="_blank">url/0001</a></td><td>5 / 5</td><td>1 / 10</td><td>4 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/url/0002" target="_blank">url/0002</a></td><td>5 / 5</td><td>1 / 15</td><td>4 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/url/0003" target="_blank">url/0003</a></td><td>5 / 5</td><td>1 / 20</td><td>4 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/url/0004" target="_blank">url/0004</a></td><td>10 / 10</td><td>2 / 15</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/url/0005" target="_blank">url/0005</a></td><td>10 / 10</td><td>3 / 20</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/url/0006" target="_blank">url/0006</a></td><td>10 / 10</td><td>3 / 25</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/url/0007" target="_blank">url/0007</a></td><td>10 / 10</td><td>3 / 30</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/url/0008" target="_blank">url/0008</a></td><td>4 / 20</td><td>3 / 25</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/url/0009" target="_blank">url/0009</a></td><td>10 / 10</td><td>2 / 350</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/url/0010" target="_blank">url/0010</a></td><td>2 / 40</td><td>2 / 270</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/url/0011" target="_blank">url/0011</a></td><td>10 / 10</td><td>2 / 20</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/url/0012" target="_blank">url/0012</a></td><td>10 / 10</td><td>2 / 20</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/url/0013" target="_blank">url/0013</a></td><td>10 / 10</td><td>2 / 20</td><td>9 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/url/0014" target="_blank">url/0014</a></td><td>20 / 20</td><td>18 / 20</td><td>19 / 20</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/url/0015" target="_blank">url/0015</a></td><td>20 / 20</td><td>18 / 20</td><td>19 / 20</td></tr>
+		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/url/0001" target="_blank">url/0001</a></td><td>5 / 5</td><td>1 / 10</td><td>4 / 5</td><td>2 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/url/0002" target="_blank">url/0002</a></td><td>5 / 5</td><td>1 / 15</td><td>4 / 5</td><td>2 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/url/0003" target="_blank">url/0003</a></td><td>5 / 5</td><td>1 / 20</td><td>4 / 5</td><td>2 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/url/0004" target="_blank">url/0004</a></td><td>10 / 10</td><td>2 / 15</td><td>9 / 10</td><td>4 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/url/0005" target="_blank">url/0005</a></td><td>10 / 10</td><td>3 / 20</td><td>9 / 10</td><td>4 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/url/0006" target="_blank">url/0006</a></td><td>10 / 10</td><td>3 / 25</td><td>9 / 10</td><td>4 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/url/0007" target="_blank">url/0007</a></td><td>10 / 10</td><td>3 / 30</td><td>9 / 10</td><td>4 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/url/0008" target="_blank">url/0008</a></td><td>4 / 20</td><td>3 / 25</td><td>9 / 10</td><td>4 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/url/0009" target="_blank">url/0009</a></td><td>10 / 10</td><td>2 / 350</td><td>9 / 10</td><td>4 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/url/0010" target="_blank">url/0010</a></td><td>2 / 40</td><td>2 / 270</td><td>9 / 10</td><td>4 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/url/0011" target="_blank">url/0011</a></td><td>10 / 10</td><td>2 / 20</td><td>9 / 10</td><td>4 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/url/0012" target="_blank">url/0012</a></td><td>10 / 10</td><td>2 / 20</td><td>9 / 10</td><td>4 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/url/0013" target="_blank">url/0013</a></td><td>10 / 10</td><td>2 / 20</td><td>9 / 10</td><td>4 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/url/0014" target="_blank">url/0014</a></td><td>20 / 20</td><td>18 / 20</td><td>19 / 20</td><td>11 / 20</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/url/0015" target="_blank">url/0015</a></td><td>20 / 20</td><td>18 / 20</td><td>19 / 20</td><td>11 / 20</td></tr>
 	</tbody>
 </table>
 
@@ -535,10 +565,11 @@
 <th>@csstools/css-tokenizer</th>
 <th>@csstools/tokenizer</th>
 <th>css-tree</th>
+<th>parse-css</th>
 </tr>
 </thead>
 	<tbody>
-		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/whitespace/0001" target="_blank">whitespace/0001</a></td><td>5 / 5</td><td>5 / 5</td><td>5 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/whitespace/0002" target="_blank">whitespace/0002</a></td><td>5 / 5</td><td>5 / 5</td><td>5 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/whitespace/0003" target="_blank">whitespace/0003</a></td><td>20 / 20</td><td>18 / 20</td><td>20 / 20</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/whitespace/0004" target="_blank">whitespace/0004</a></td><td>10 / 10</td><td>4 / 20</td><td>10 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/whitespace/0005" target="_blank">whitespace/0005</a></td><td>10 / 10</td><td>4 / 20</td><td>10 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/whitespace/0006" target="_blank">whitespace/0006</a></td><td>20 / 20</td><td>14 / 20</td><td>20 / 20</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/whitespace/0007" target="_blank">whitespace/0007</a></td><td>5 / 5</td><td>5 / 5</td><td>5 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/whitespace/0008" target="_blank">whitespace/0008</a></td><td>10 / 10</td><td>3 / 40</td><td>10 / 10</td></tr>
+		<tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/whitespace/0001" target="_blank">whitespace/0001</a></td><td>5 / 5</td><td>5 / 5</td><td>5 / 5</td><td>2 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/whitespace/0002" target="_blank">whitespace/0002</a></td><td>5 / 5</td><td>5 / 5</td><td>5 / 5</td><td>2 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/whitespace/0003" target="_blank">whitespace/0003</a></td><td>20 / 20</td><td>18 / 20</td><td>20 / 20</td><td>10 / 20</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/whitespace/0004" target="_blank">whitespace/0004</a></td><td>10 / 10</td><td>4 / 20</td><td>10 / 10</td><td>4 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/whitespace/0005" target="_blank">whitespace/0005</a></td><td>10 / 10</td><td>4 / 20</td><td>10 / 10</td><td>4 / 10</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/whitespace/0006" target="_blank">whitespace/0006</a></td><td>20 / 20</td><td>14 / 20</td><td>20 / 20</td><td>10 / 20</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/whitespace/0007" target="_blank">whitespace/0007</a></td><td>5 / 5</td><td>5 / 5</td><td>5 / 5</td><td>2 / 5</td></tr><tr><td><a href="https://github.com/romainmenke/css-tokenizer-tests/blob/main/tests/whitespace/0008" target="_blank">whitespace/0008</a></td><td>10 / 10</td><td>3 / 40</td><td>10 / 10</td><td>4 / 10</td></tr>
 	</tbody>
 </table>
 
