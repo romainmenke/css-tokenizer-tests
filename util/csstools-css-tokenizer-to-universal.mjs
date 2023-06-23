@@ -1,10 +1,19 @@
 export function csstoolsCSSTokenizerToUniversal(token) {
+	const raw = !!token[4] ? {
+		...(token[4]),
+	} : null;
+
+	if (raw) {
+		// TODO : remove this when there is time to integrate the sign character into the test suite.
+		delete raw.signCharacter;
+	}
+
 	return {
 		type: tokenNameToUniversal(token[0]),
 		raw: token[1],
 		startIndex: token[2],
 		endIndex: token[3] + 1,
-		structured: token[4] ?? null
+		structured: raw
 	}
 }
 

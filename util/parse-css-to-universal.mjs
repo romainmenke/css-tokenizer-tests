@@ -1,6 +1,5 @@
 export function parseCssToUniversal(token, source) {
-	const tokenType = tokenNameToUniversal(token.tokenType);
-
+	const tokenType = tokenNameToUniversal(token.type);
 	let structured = null;
 	if (tokenType === 'ident-token') {
 		structured = {
@@ -23,7 +22,7 @@ export function parseCssToUniversal(token, source) {
 	if (tokenType === 'hash-token') {
 		structured = {
 			value: token.value,
-			type: token.type,
+			type: token.isIdent ? 'id' : 'unrestricted',
 		}
 	}
 
@@ -54,14 +53,14 @@ export function parseCssToUniversal(token, source) {
 	if (tokenType === 'number-token') {
 		structured = {
 			value: token.value,
-			type: token.type
+			type: token.isInteger ? 'integer' : 'number',
 		}
 	}
 
 	if (tokenType === 'dimension-token') {
 		structured = {
 			value: token.value,
-			type: token.type,
+			type: token.isInteger ? 'integer' : 'number',
 			unit: token.unit,
 		}
 	}
@@ -76,18 +75,18 @@ export function parseCssToUniversal(token, source) {
 }
 
 const nameMapping = {
-	'(': '(-token',
-	')': ')-token',
+	'OPEN-PAREN': '(-token',
+	'CLOSE-PAREN': ')-token',
 	'CDC': 'CDC-token',
 	'CDO': 'CDO-token',
 	'EOF': 'EOF-token',
-	'[': '[-token',
-	']': ']-token',
+	'OPEN-SQUARE': '[-token',
+	'CLOSE-SQUARE': ']-token',
 	'AT-KEYWORD': 'at-keyword-token',
 	'BADSTRING': 'bad-string-token',
 	'BADURL': 'bad-url-token',
-	':': 'colon-token',
-	',': 'comma-token',
+	'COLON': 'colon-token',
+	'COMMA': 'comma-token',
 	'comment': 'comment',
 	'DELIM': 'delim-token',
 	'DIMENSION': 'dimension-token',
@@ -96,12 +95,12 @@ const nameMapping = {
 	'IDENT': 'ident-token',
 	'NUMBER': 'number-token',
 	'PERCENTAGE': 'percentage-token',
-	';': 'semicolon-token',
+	'SEMICOLON': 'semicolon-token',
 	'STRING': 'string-token',
 	'URL': 'url-token',
 	'WHITESPACE': 'whitespace-token',
-	'{': '{-token',
-	'}': '}-token',
+	'OPEN-CURLY': '{-token',
+	'CLOSE-CURLY': '}-token',
 }
 
 function tokenNameToUniversal(name) {
