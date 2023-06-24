@@ -31,7 +31,7 @@
     "@csstools/css-tokenizer": "^2.0.0",
     "@csstools/tokenizer": "^3.1.0",
     "css-tree": "^2.3.1",
-    "csslex": "^1.0.0",
+    "csslex": "^1.0.2",
     "parse-css": "github:tabatkins/parse-css",
     "postcss": "^8.4.20"
   },
