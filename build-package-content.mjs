@@ -32,10 +32,10 @@ import { traverseDir } from "./lib/traverse-dir.mjs";
 			packageContents[testFileParsed.dir] = {
 				'css': (await fs.readFile(path.join(testFileParsed.dir, 'source.css'))).toString(),
 				'tokens': JSON.parse((await fs.readFile(path.join(testFileParsed.dir, 'tokens.json'))).toString())
-			}
+			};
 		}
 	}
 
-	await fs.writeFile('./index.mjs', `export const testCorpus = ${JSON.stringify(packageContents)}`)
-	await fs.writeFile('./index.cjs', `module.exports = { testCorpus: ${JSON.stringify(packageContents)} }`)
+	await fs.writeFile('./index.mjs', `export const testCorpus = ${JSON.stringify(packageContents)}`);
+	await fs.writeFile('./index.cjs', `module.exports = { testCorpus: ${JSON.stringify(packageContents)} }`);
 }
