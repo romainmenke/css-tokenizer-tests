@@ -24,7 +24,7 @@ export function cssLexToUniversal(token, source) {
 		raw: source.slice(token[1], token[2]),
 		startIndex: token[1],
 		endIndex: token[2],
-		structured: (typeof tokenValue === 'string') ? { value: tokenValue } : tokenValue,
+		structured,
 	}
 }
 
