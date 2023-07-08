@@ -1,5 +1,9 @@
 # @rmenke/css-tokenizer-tests
 
+## 1.1.1
+
+Add a test for `1e+`
+
 ## 1.1.0
 
 Add `signCharacter` for `number`, `dimension` and `percentage` tokens.
