@@ -1,5 +1,9 @@
 # @rmenke/css-tokenizer-tests
 
+## 1.1.2
+
+Add a test for `.2.7`
+
 ## 1.1.1
 
 Add a test for `1e+`

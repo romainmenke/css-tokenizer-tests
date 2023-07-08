@@ -19,17 +19,6 @@ export function cssLexToUniversal(token, source) {
 		structured = tokenValue;
 	}
 
-	if (
-		tokenType === 'percentage-token' ||
-		tokenType === 'number-token' ||
-		tokenType === 'dimension-token'
-	) {
-		const firstChar = source.slice(token[1], token[1] + 1);
-		if (firstChar === '+' || firstChar === '-') {
-			structured.signCharacter = firstChar;
-		}
-	}
-
 	return {
 		type: tokenType,
 		raw: source.slice(token[1], token[2]),
