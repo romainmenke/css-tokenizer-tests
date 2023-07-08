@@ -1,0 +1,22 @@
+# @rmenke/css-tokenizer-tests
+
+## 1.1.0
+
+Add `signCharacter` for `number`, `dimension` and `percentage` tokens.
+This makes it possible to distinguish between `+10` and `10` or `-0` and `0`.
+
+This value can be either provided by a tokenizer or inferred from the first character of the `raw` value.
+
+```json
+{
+	"type": "number-token",
+	"raw": "+10",
+	"startIndex": 0,
+	"endIndex": 3,
+	"structured": {
+		"signCharacter": "+",
+		"value": 10,
+		"type": "integer"
+	}
+}
+```

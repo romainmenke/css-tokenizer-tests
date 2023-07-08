@@ -3,8 +3,7 @@ export function csstoolsCSSTokenizerToUniversal(token) {
 		...(token[4]),
 	} : null;
 
-	if (raw) {
-		// TODO : remove this when there is time to integrate the sign character into the test suite.
+	if (raw && !raw.signCharacter) {
 		delete raw.signCharacter;
 	}
 

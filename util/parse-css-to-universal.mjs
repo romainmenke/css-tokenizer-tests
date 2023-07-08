@@ -46,7 +46,8 @@ export function parseCssToUniversal(token, source) {
 
 	if (tokenType === 'percentage-token') {
 		structured = {
-			value: token.value
+			value: token.value,
+			signCharacter: token.sign,
 		}
 	}
 
@@ -54,6 +55,7 @@ export function parseCssToUniversal(token, source) {
 		structured = {
 			value: token.value,
 			type: token.isInteger ? 'integer' : 'number',
+			signCharacter: token.sign,
 		}
 	}
 
@@ -62,6 +64,7 @@ export function parseCssToUniversal(token, source) {
 			value: token.value,
 			type: token.isInteger ? 'integer' : 'number',
 			unit: token.unit,
+			signCharacter: token.sign,
 		}
 	}
 
