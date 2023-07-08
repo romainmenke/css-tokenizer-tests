@@ -1,5 +1,9 @@
 # @rmenke/css-tokenizer-tests
 
+## 1.1.3
+
+Move recent tests from the `numeric` category to `number`.
+
 ## 1.1.2
 
 Add a test for `.2.7`
