@@ -68,6 +68,10 @@ export function parseCssToUniversal(token, source) {
 		}
 	}
 
+	if (structured && !structured.signCharacter) {
+		delete structured.signCharacter;
+	}
+
 	return {
 		type: tokenType,
 		raw: token.toSource(),

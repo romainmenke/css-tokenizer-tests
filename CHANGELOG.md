@@ -1,5 +1,9 @@
 # @rmenke/css-tokenizer-tests
 
+## 1.1.4
+
+Fix negative zero serialization in test corpus.
+
 ## 1.1.3
 
 Move recent tests from the `numeric` category to `number`.

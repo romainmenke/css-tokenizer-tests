@@ -36,6 +36,20 @@ import { traverseDir } from "./lib/traverse-dir.mjs";
 		}
 	}
 
-	await fs.writeFile('./index.mjs', `export const testCorpus = ${JSON.stringify(packageContents)}`);
-	await fs.writeFile('./index.cjs', `module.exports = { testCorpus: ${JSON.stringify(packageContents)} }`);
+	const minusZeroMarker = '266d8e6c-5b7d-4f12-a6ef-675e2ede9be2';
+	let packageContentsStr = JSON.stringify(
+		packageContents,
+		function (key, value) {
+			if (Object.is(value, -0)) {
+				return minusZeroMarker;
+			}
+
+			return value;
+		}
+	);
+
+	packageContentsStr = packageContentsStr.replaceAll('"' + minusZeroMarker + '"', '-0');
+
+	await fs.writeFile('./index.mjs', `export const testCorpus = ${packageContentsStr}`);
+	await fs.writeFile('./index.cjs', `module.exports = { testCorpus: ${packageContentsStr} }`);
 }
