@@ -1,5 +1,9 @@
 # @rmenke/css-tokenizer-tests
 
+## 1.1.5
+
+Add a test for `string` tokens containing a backslash followed by CRLF.
+
 ## 1.1.4
 
 Fix negative zero serialization in test corpus.

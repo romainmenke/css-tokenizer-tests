@@ -26,7 +26,7 @@ export function cdoublevTokenizerToUniversal(token, source) {
 	if (tokenType === 'hash-token') {
 		structured = {
 			value: token.value,
-			type: token.type,
+			type: token.type === 'id' ? 'id' : 'unrestricted',
 		}
 	}
 
