@@ -1,5 +1,9 @@
 # @rmenke/css-tokenizer-tests
 
+## 1.1.6
+
+Add extra tests with code points spanning two string indices.
+
 ## 1.1.5
 
 Add a test for `string` tokens containing a backslash followed by CRLF.

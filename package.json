@@ -1,6 +1,6 @@
 {
   "name": "@rmenke/css-tokenizer-tests",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "Tests for CSS Tokenizers",
   "main": "index.cjs",
   "module": "index.mjs",
@@ -30,13 +30,13 @@
   "license": "MIT",
   "devDependencies": {
     "@adguard/css-tokenizer": "^0.0.1",
+    "@cdoublev/css": "github:cdoublev/css",
     "@csstools/css-tokenizer": "^2.2.0",
     "@csstools/tokenizer": "^3.1.0",
     "css-tree": "^2.3.1",
     "csslex": "^1.0.4",
     "parse-css": "github:tabatkins/parse-css",
-    "postcss": "^8.4.20",
-    "@cdoublev/css": "github:cdoublev/css"
+    "postcss": "^8.4.20"
   },
   "volta": {
     "node": "22.0.0"
