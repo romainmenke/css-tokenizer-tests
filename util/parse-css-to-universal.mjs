@@ -1,4 +1,4 @@
-export function parseCssToUniversal(token, source) {
+export function parseCssToUniversal(token) {
 	const tokenType = tokenNameToUniversal(token.type);
 	let structured = null;
 	if (tokenType === 'ident-token') {
