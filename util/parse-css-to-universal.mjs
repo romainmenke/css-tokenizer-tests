@@ -72,9 +72,14 @@ export function parseCssToUniversal(token) {
 		delete structured.signCharacter;
 	}
 
+	let raw = '';
+	try {
+		raw = token.toSource();
+	} catch {}
+
 	return {
 		type: tokenType,
-		raw: token.toSource(),
+		raw: raw,
 		startIndex: -1,
 		endIndex: -1,
 		structured: structured

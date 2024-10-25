@@ -1,5 +1,10 @@
 # @rmenke/css-tokenizer-tests
 
+## 1.2.0
+
+Add extra test coverage and fix existing test cases for input stream preprocessing behavior.
+With special thanks to @keithamus for reporting this issue and for providing insights.
+
 ## 1.1.6
 
 Add extra tests with code points spanning two string indices.
