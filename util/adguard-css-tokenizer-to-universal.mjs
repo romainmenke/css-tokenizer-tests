@@ -1,5 +1,4 @@
-import { TokenType } from '@adguard/css-tokenizer';
-import { ident, string } from 'css-tree';
+import { TokenType, decodeIdent } from '@adguard/css-tokenizer';
 
 export function adGuardCssTokenizerToUniversal([token, start, end], source) {
 	const type = typeMapping[token] ?? token;
@@ -9,26 +8,26 @@ export function adGuardCssTokenizerToUniversal([token, start, end], source) {
 	switch (type) {
 		case 'ident-token':
 			structured = {
-				value: ident.decode(source.slice(start, end)),
+				value: decodeIdent(source.slice(start, end)),
 			};
 			break;
 
 		case 'at-keyword-token':
 			structured = {
-				value: ident.decode(source.slice(start + 1, end)),
+				value: decodeIdent(source.slice(start + 1, end)),
 			};
 			break;
 
 		case 'hash-token':
 			structured = {
-				value: ident.decode(source.slice(start + 1, end)),
+				value: decodeIdent(source.slice(start + 1, end)),
 				type: 'unrestricted',
 			};
 			break;
 
 		case 'string-token':
 			structured = {
-				value: string.decode(source.slice(start, end)),
+				value: source.slice(start, end),
 			};
 			break;
 

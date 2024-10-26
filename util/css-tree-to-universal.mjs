@@ -3,7 +3,6 @@ import { ident, string } from 'css-tree';
 
 const tokenNames = [
 	...originalTokenNames,
-	'comment'
 ]
 
 export function csstreeToUniversal(token, source) {
@@ -63,7 +62,7 @@ const nameMapping = {
 	'bad-url-token': 'bad-url-token',
 	'colon-token': 'colon-token',
 	'comma-token': 'comma-token',
-	'comment': 'comment',
+	'comment-token': 'comment',
 	'delim-token': 'delim-token',
 	'dimension-token': 'dimension-token',
 	'function-token': 'function-token',
