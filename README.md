@@ -4,16 +4,6 @@
 
 > A corpus of CSS to build a comprehensive test suite for your tokenizer.
 
-Tokenizing CSS is non-trivial and some packages might choose to deviate from the specification.
-This library is not intended to rank tokenizers.
-
-_I can not stress enough that this is comparing apples to oranges. Different tokenizers are build for different purposes._
-_Some do not track source offsets, others do not expose parsed/unescaped values._
-
-It is intended to make it easier to find and resolve issues when that is desirable.
-
------
-
 ## Test Corpus format :
 
 ```js
@@ -36,7 +26,7 @@ for (const aTestCaseName in testCorpus) {
 
 ## Tokens format :
 
-This test corpus strictly follows the CSS specification.
+This test corpus follows the CSS specification.
 The token type names are taken directly from the specification.
 
 - `type` is the token type name
@@ -57,7 +47,6 @@ The token type names are taken directly from the specification.
 ```
 
 The CSS specification does not require tokenizers to expose this exact interface or the values therein.
-This is intended as data to verify that a tokenizer works as expected, nothing more.
+This is intended as data to verify that a tokenizer works as expected.
 
 You choose which bits you want to compare and how.
-This is also why this package is not a test framework.
