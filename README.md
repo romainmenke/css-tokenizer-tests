@@ -2,6 +2,8 @@
 
 [<img alt="npm version" src="https://img.shields.io/npm/v/@rmenke/css-tokenizer-tests.svg" height="20">](https://www.npmjs.com/package/@rmenke/css-tokenizer-tests)
 
+> A corpus of CSS to build a comprehensive test suite for your tokenizer.
+
 Tokenizing CSS is non-trivial and some packages might choose to deviate from the specification.
 This library is not intended to rank tokenizers.
 
@@ -9,8 +11,6 @@ _I can not stress enough that this is comparing apples to oranges. Different tok
 _Some do not track source offsets, others do not expose parsed/unescaped values._
 
 It is intended to make it easier to find and resolve issues when that is desirable.
-
-It is also a corpus of CSS that can be used to build a comprehensive test suite for your tokenizer.
 
 -----
 
