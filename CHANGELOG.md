@@ -1,5 +1,9 @@
 # @rmenke/css-tokenizer-tests
 
+## 1.4.0
+
+Add extra test coverage for a lot more cases, including `delim` which lacked dedicated tests
+
 ## 1.3.1
 
 Include the new tests this time

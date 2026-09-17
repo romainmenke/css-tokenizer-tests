@@ -1,0 +1,1 @@
+integer with trailing dot
