@@ -1,5 +1,9 @@
 # @rmenke/css-tokenizer-tests
 
+## 1.3.1
+
+Include the new tests this time
+
 ## 1.3.0
 
 Add extra test coverage for astral code points (e.g. `url(😀)`)
