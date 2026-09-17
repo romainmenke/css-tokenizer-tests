@@ -1,5 +1,9 @@
 # @rmenke/css-tokenizer-tests
 
+## 1.3.0
+
+Add extra test coverage for astral code points (e.g. `url(😀)`)
+
 ## 1.2.0
 
 Add extra test coverage and fix existing test cases for input stream preprocessing behavior.
